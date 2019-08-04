@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/*body {*/
+/*background: #fafafa;*/
+/*}*/
+
+.top {
+    float: left;
+    margin-left: 100px;
+    width: 1200px;
+    height: 30px;
+    margin-top: 110px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top > a {
+    margin-top: 140px;
+    font-size: 16px;
+    color: #636363;
+
+}
+
+.content {
+    float: left;
+    /*margin: 0 auto;*/
+    width: 1200px;
+    margin-left: 80px;
+    height: 800px;
+    padding: 10px;
+}
+
+.lt {
+    width: 190px;
+    text-align: center;
+    background: white;
+    height: 800px;
+    padding: 5px;
+
+}
+
+.lt > dl > dt {
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.lt dl dt:hover {
+    cursor: pointer;
+}
+
+.lt dd {
+    padding: 10px 0;
+}
+
+.lt a {
+    color: #636363;
+}
+
+.lt dd a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+dt {
+    font-size: larger;
+}
+
+.content > div {
+    float: left;
+}
+
+.rt {
+    width: 950px;
+}
+
+.push {
+    width: 400px;
+    position: relative;
+    left: 20%;
+}
+
+.push input {
+    width: 400px;
+    padding: 15px 0 10px;
+}
+
+.push select {
+    padding: 10px 25px 15px 10px;
+    font-size: 15px;
+}

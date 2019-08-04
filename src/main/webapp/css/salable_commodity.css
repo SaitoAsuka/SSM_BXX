@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/*body {*/
+    /*background: #fafafa;*/
+/*}*/
+
+.top {
+    float: left;
+    margin-left: 100px;
+    width: 1200px;
+    height: 30px;
+    margin-top: 110px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top > a {
+    margin-top: 140px;
+    font-size: 16px;
+    color: #636363;
+
+}
+
+.content {
+    float: left;
+    /*margin: 0 auto;*/
+    width: 1200px;
+    margin-left: 80px;
+    height: 800px;
+    padding: 10px;
+}
+
+.lt {
+    width: 190px;
+    text-align: center;
+    background: white;
+    height: 800px;
+    padding: 5px;
+
+}
+
+.lt > dl > dt {
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.lt dl dt:hover {
+    cursor: pointer;
+}
+
+.lt dd {
+    padding: 10px 0;
+}
+
+.lt a {
+    color: #636363;
+}
+
+.lt dd a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+
+
+dt {
+    font-size: larger;
+}
+
+.content > div {
+    float: left;
+}
+
+.rt {
+    width: 950px;
+    height: 800px;
+    padding: 10px;
+    background: white;
+    margin-left: 20px;
+
+}
+
+.order_info {
+
+    background: #f6f6f6;
+    height: 40px;
+    width: 950px;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+
+}
+
+
+.item {
+    margin-top: 20px;
+    width: 950px;
+    height: 250px;
+    line-height: 100px;
+    border: 1px solid #f6f6f6;
+}
+
+.order_title {
+    padding: 10px 0 10px 0;
+    width: 950px;
+    background: #f5f5f5;
+}
+.order_info{
+    padding: 1px 1px 20px 0px;
+}
+.good_name{
+    float: left;
+    width: 650px;
+    text-align: center;
+}
+.good_price{
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+.good_stock{
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+
+.order_title>span{
+    font-size: 1px;
+    width: 100px;
+}
+.produce {
+
+    width: 350px;
+}
+
+.produce_img {
+    float: left;
+    left: 10px;
+
+}
+.produce_describe{
+    position: relative;
+    left: 40%;
+    font-size: 20px;
+    width: 700px;
+    text-align: center;
+}
+
+

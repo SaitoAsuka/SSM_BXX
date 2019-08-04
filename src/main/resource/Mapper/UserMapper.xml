@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="cn.tedu.ssm.Dao.UserDao">
+    <select id="findByName" resultType="cn.tedu.ssm.bean.User">
+        select * from user where u_name=#{u_name}
+        and u_password=#{u_password}
+    </select>
+    <select id="reqBrandGoods" resultType="cn.tedu.ssm.bean.Goods">
+        select * from goods where g_type=#{g_type}
+    </select>
+    <select id="reqSupermarketGoods" resultType="cn.tedu.ssm.bean.Goods">
+        select * from goods where g_type=#{g_type}
+    </select>
+    <select id="reqSaleGoods" resultType="cn.tedu.ssm.bean.Goods">
+        select * from goods where g_type=#{g_type}
+    </select>
+    <select id="reqSecKillGoods" resultType="cn.tedu.ssm.bean.Goods">
+        select * from goods where g_type=#{g_type}
+    </select>
+    <select id="reqOrder" resultType="cn.tedu.ssm.bean.Order">
+        select * from order1 where uid=#{uid}
+    </select>
+    <select id="reqGoods" resultType="cn.tedu.ssm.bean.Goods">
+        select * from goods where add_user=#{u_name}
+    </select>
+    <insert id="saveImg" parameterType="cn.tedu.ssm.bean.Goods">
+        insert into goods (g_name,g_price,g_info,g_imgpath,g_type,add_user,stock)
+        value (#{g_name},#{g_price},#{g_info},#{g_imgpath},#{g_type},#{add_user},#{stock})
+    </insert>
+    <select id="reqShoppingCart" resultType="cn.tedu.ssm.bean.ShoppingCart">
+        select * from shoppingcart where uid =#{uid}
+    </select>
+    <select id="findAddress" resultType="cn.tedu.ssm.bean.Address">
+
+		select uid, r_name,r_province,r_city,r_district,r_detail,r_phone,r_addname from recaddress
+
+		where uid=#{uid}
+
+	</select>
+
+    <insert id="insertAddress" parameterType="cn.tedu.ssm.bean.Address">
+
+		insert into recaddress(uid,r_name,r_province,r_city,r_district,r_detail,r_phone,r_addname)
+
+		values(#{uid},#{r_name},#{r_province},#{r_city},#{r_district},#{r_detail},#{r_phone},#{r_addname})
+
+	</insert>
+
+    <update id="updateAddress" parameterType="cn.tedu.ssm.bean.Address">
+
+		update recaddress set r_name=#{r_name},r_province=#{r_province},r_city=#{r_city},
+
+		r_district=#{r_district},r_detail=#{r_detail},r_phone=#{r_phone},r_addname=#{r_addname}
+
+		where uid=#{uid}
+	</update>
+    <update id="setPassword" parameterType="cn.tedu.ssm.bean.User">
+
+		update user set u_password=#{u_password} where uid=#{uid}
+
+	</update>
+    <select id="reqState" resultType="cn.tedu.ssm.bean.Order">
+        select * from order1 where uid=#{uid} and c_state=#{c_state}
+    </select>
+
+
+
+
+    <!--
+        通过id查找商品
+     -->
+    <select id="findByGoodsId" resultType="cn.tedu.ssm.bean.Goods">
+
+		select * from goods
+
+		where g_id=#{g_id}
+
+	</select>
+
+    <!--新增购物车信息  -->
+    <insert id="insert"  parameterType="cn.tedu.ssm.bean.ShoppingCart">
+
+		insert into shoppingcart(uid,g_id,g_name,g_info,g_price,g_imgpath)
+
+		values(#{uid},#{g_id},#{g_name},#{g_info},#{g_price},#{g_imgpath})
+
+	</insert>
+    <delete id="ShoppingCartDelete" >
+        delete from shoppingcart where g_id=#{g_id}
+    </delete>
+</mapper>

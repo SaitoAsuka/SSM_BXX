@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.red{
+    color: red;
+}
+
+.rt>form{
+    background-color: #f6f6f6;
+}
+
+.rt>form>div{
+    margin-bottom: 50px;
+}
+
+.recAddress>select{
+    width: 100px;
+    margin-right: 50px;
+}
+
+.address_detail{
+    height: 50px;
+}
+
+
+
+
+.myaddress>div{
+    margin-bottom: 50px;
+}
+
+.myaddress{
+    background-color: #f6f6f6;
+}
+
+.bc>input{
+    margin-left: 400px;
+    margin-bottom: 20px;
+}

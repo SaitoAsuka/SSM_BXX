@@ -1,0 +1,170 @@
+@CHARSET "UTF-8";
+
+.top{
+	width: 1200px;
+	height: 30px;
+	margin: 0 auto;
+	margin-top: 120px;
+	border-bottom: 1px dashed black;
+}
+.top>a{
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
+}
+.top>span{
+	color: black;
+	font-size: 16px;
+}
+
+.entirety{
+	
+	width:1200px;
+	height:500px;
+	margin:0 auto;
+	margin-top:30px;
+	position: relative;
+	padding-top: 25px;
+	background: white;
+}
+
+.picture{
+	width: 300px;
+	height:300px;
+	margin-left: 30px;
+	position: absolute;
+}
+.describe{
+	height:500px;
+	width:700px;
+	padding-top: 10px;
+	margin-left: 400px;
+}
+.describe>div{
+	float: left;
+}
+
+.name{
+	width:699px;
+	height:80px;
+	margin-bottom:10px;
+	font-style: italic;
+}
+.h{
+	color: #000;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.p{
+	color:#424242;
+	font-size: 18px;
+}
+
+.info{
+	width:700px;
+	height:200px;
+	margin-bottom:10px;
+	letter-spacing: 1px;
+}
+.i_head{
+	width: 690px;
+	height: 40px;
+	background-color: #F42E3B;
+	text-align: left;
+	padding-left: 10px;
+
+}
+.i_head>span{
+	line-height:40px;
+	color: white;
+}
+.i_price{
+	width: 700px;
+	height: 150px;
+	background-color: #FAFAFA;
+	padding-top: 10px;
+}
+
+.ip_head{
+	width: 350px;
+	height: 30px;
+	position: absolute;
+}
+.ip_h{
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	padding-left: 10px;
+}
+.ip_con{
+	width: 100px;
+	height: 30px;
+	margin-left:80px;
+	font-size: 24px;
+	
+}
+.ip_con>span{
+	color: red;
+}
+.ip_sale{
+	width: 200px;
+	height: 30px;
+	margin-left: 500px;
+}
+
+.cx{
+	width:700px;
+	height: 100px;
+	color: #666;
+	padding-left: 10px;
+
+}
+
+.cx_head{
+	width: 60px;
+	height: 100px;
+	position: absolute;
+}
+.cx_con{
+	width:630px;
+	height: 100px;
+	margin-left: 60px;
+	padding-left: 10px;
+}
+.xg{
+	width: 630px;
+	height: 50px;
+}
+.xg_head{
+	width:40px;
+	border: 1px solid red;
+	color: red;
+}
+.mj{
+	width: 630px;
+	height: 50px;
+}
+.mj_head{
+	width:40px;
+	border: 1px solid red;
+	color: red;
+}
+.gocart{
+	width: 200px;
+	height: 100px;
+	margin-left: 200px;
+}
+.go{
+	width: 120px;
+	height: 40px;
+	background-color: #F42E3B;
+	padding-top: 15px;
+	padding-left: 20px;
+}
+.go>span{
+	color: white;
+	font-size: 18px;
+}
+.gocart>a{
+	text-decoration: none;
+}
